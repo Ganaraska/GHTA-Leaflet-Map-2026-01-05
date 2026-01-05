@@ -538,7 +538,8 @@ var latlngs = [
 
 var polyline = L.polyline(latlngs, {color: 'orange', weight: 6}).addTo(map);
 
-
+// zoom the map to the polyline
+map.fitBounds(polyline.getBounds());
 
 // BARRIE TRAIL
 
@@ -2234,10 +2235,6 @@ var latlngs = [
 ];
 
 var polyline = L.polyline(latlngs, {color: 'cadetblue', weight: 6}).addTo(map);
-
-// zoom the map to the polyline
-map.fitBounds(polyline.getBounds());
-
 
 
 
